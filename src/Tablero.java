@@ -1,22 +1,22 @@
-public class Tablero {
-    public Celda tabla;
-    public Random dado;
-    public Jugador jugador;
-    public int njugadores;
-    
-    public Tablero(){
-        tabla = new Celda[100];
-        dado = new Random();
-        jugador = new Jugador();
-    }
-    public void newJugador(){
 
+
+public class Tablero {
+    public Celda[] tabla;
+    int nivel;
+
+    public Tablero(int nivel){
+        this.nivel = nivel;
+        tabla = new Celda[100];
     }
-    public int lanzarDado(){
-        return dado.nextInt(6) + 1;
-    }
+    
     public void timer(){
-        //por desarrollar
+        /*por desarrollar
+        for (int t = 20; t)
+        if(timer != 0){
+
+        }
+
+        */
     }
 
 }
