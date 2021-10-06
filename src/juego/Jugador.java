@@ -1,3 +1,5 @@
+package juego;
+
 public class Jugador {
     public Jugador nextP;
     public int position;

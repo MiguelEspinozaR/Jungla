@@ -1,3 +1,5 @@
+package juego;
+
 import java.util.Random;
 //import javax.swing.plaf.OptionPaneUI;
 

@@ -1,4 +1,4 @@
-
+package juego;
 
 public class Tablero {
     public Celda[] tabla;
