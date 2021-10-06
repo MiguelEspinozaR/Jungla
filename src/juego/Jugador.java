@@ -1,24 +1,33 @@
 package juego;
 
 public class Jugador {
-    public Jugador nextP;
-    public int position;
+    private Jugador nextP;
+    private int position;
     public int comodin;
     
     public Jugador(){
-        this.nextP = nextP;
+        nextP = this;
         position = 0;
         comodin = 2;
     }
     
     public int getPosition(){
-        return position;
+        return this.position;
+    }
+    public Jugador getSigJugador(){
+        return this.nextP;
     }
     public void mover(int x){
         position += x;
     }
-    public void insertPlayer(){
-
+    public void insertPlayer(Jugador newPlayer){
+        Jugador x = nextP;
+        while(x.nextP != null){
+            x=nextP;
+        }
+        nextP = newPlayer;
+        newPlayer.nextP = this;
     }
+    
     
 }
